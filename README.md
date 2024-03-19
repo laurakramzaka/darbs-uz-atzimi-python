@@ -44,3 +44,16 @@ dziesmas_teksts = "Es ________ brīnos, kas tas varētu būt"
 pareizais_vards = "parasti"
 
 atminet_vardu(dziesmas_teksts, pareizais_vards)
+
+
+
+Protams, šeit ir vienkāršots algoritma apraksts:
+
+1. Sadala dziesmas tekstu pa vārdiem.
+2. Atrodot vārdus ar "_", tos identificē kā trūkstošos vārdus.
+3. Ja trūkstošo vārdu skaits atbilst pareizo vārdu skaitam, programma turpina.
+4. Lai spēlētājs varētu minēt, tiek izvadīti trūkstošo vārdu numuri un burtu skaits.
+5. Spēlētājam tiek pieprasīts ievadīt minējumu.
+6. Pārbauda, vai minējums sakrīt ar pareizo vārdu.
+7. Ja minējums ir pareizs, izvada apsveikuma ziņojumu.
+8. Ja visi vārdi ir pareizi atminēti, izvada paziņojumu par veiksmīgu atminēšanu.
