@@ -22,3 +22,25 @@ dziesmas_teksts = "Es ________ brīnos, kas ________ varētu būt"
 pareizie_vardi = ["parasti", "tas"]
 
 atminet_vardus(dziesmas_teksts, pareizie_vardi)
+
+
+
+
+def atminet_vardu(dziesmas_teksts, pareizais_vards):
+    vardi = dziesmas_teksts.split()
+    for i, vards in enumerate(vardi):
+        if '_' in vards:
+            print("Trūkstošais vārds ir:", vards.replace('_', ''))
+            minejums = input("Ievadiet savu minējumu: ")
+            if minejums.lower() == pareizais_vards.lower():
+                print("Apsveicu, jūs pareizi atminējāt vārdu!")
+                return
+            else:
+                print("Diemžēl tas nav pareizais vārds. Mēģiniet vēlreiz.")
+                return
+    print("Nav trūkstoša vārda šajā dziesmas tekstā.")
+
+dziesmas_teksts = "Es ________ brīnos, kas tas varētu būt"
+pareizais_vards = "parasti"
+
+atminet_vardu(dziesmas_teksts, pareizais_vards)
